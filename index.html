@@ -1,1 +1,269 @@
-<!-- TODO: Build Skeloton Home Page-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Docker</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <!-- Profile Section -->
+        <div class="user-profile">
+          <div class="avatar">JD</div>
+          <div class="user-info">
+            <span class="user-name">Jane Doe</span>
+            <span class="user-role">Senior Partner</span>
+          </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <nav class="sb-links">
+          <a href="#" class="nav-item active" data-page="dashboard">
+            <i class="ph ph-house"></i>
+            <span>Home</span>
+          </a>
+          <a href="#" class="nav-item" data-page="cases">
+            <i class="ph ph-briefcase"></i>
+            <span>Cases</span>
+            <span class="nav-badge">12</span>
+          </a>
+          <a href="#" class="nav-item" data-page="documents">
+            <i class="ph ph-files"></i>
+            <span>Documents</span>
+          </a>
+          <div class="sidebar-search" id="search-trigger">
+            <i class="ph ph-magnifying-glass"></i>
+          </div>
+        </nav>
+
+        <!-- Divider -->
+        <div class="sidebar-spacer"></div>
+
+        <!-- Upcoming Section (Calendar access at bottom) -->
+        <div class="sidebar-section">
+          <span class="section-label">Upcoming</span>
+          <div class="upcoming-item">
+            <div class="upcoming-date">Jul 15</div>
+            <div class="upcoming-details">
+              <span class="upcoming-title">Smith v. Jones</span>
+              <span class="upcoming-time">9:00 AM • Court Hearing</span>
+            </div>
+          </div>
+          <div class="upcoming-item">
+            <div class="upcoming-date">Jul 16</div>
+            <div class="upcoming-details">
+              <span class="upcoming-title">Client Meeting</span>
+              <span class="upcoming-time">2:00 PM • Office</span>
+            </div>
+          </div>
+          <a href="#" class="nav-item" data-page="calendar">
+            <i class="ph ph-calendar"></i>
+            <span>Full Calendar</span>
+          </a>
+        </div>
+
+        <div class="sidebar-divider"></div>
+
+        <!-- Private Section (unchanged) -->
+        <div class="sidebar-section">
+          <span class="section-label">Private</span>
+          <a href="#" class="nav-item" data-page="drafts">
+            <i class="ph ph-note-pencil"></i>
+            <span>My Drafts</span>
+          </a>
+          <a href="#" class="nav-item" data-page="templates">
+            <i class="ph ph-file-text"></i>
+            <span>Templates</span>
+          </a>
+          <a href="#" class="nav-item" data-page="my-notes">
+            <i class="ph ph-notepad"></i>
+            <span>My Notes</span>
+          </a>
+          <a href="#" class="nav-item" data-page="quick-capture">
+            <i class="ph ph-lightning"></i>
+            <span>Quick Capture</span>
+          </a>
+        </div>
+
+        <div class="sidebar-divider"></div>
+
+        <!-- Teamspaces Section (Messages moved to top) -->
+        <div class="sidebar-section">
+          <span class="section-label">Teamspaces</span>
+          <a href="#" class="nav-item" data-page="messages">
+            <i class="ph ph-chat-circle"></i>
+            <span>All Messages</span>
+            <span class="nav-badge">3</span>
+          </a>
+          <a href="#" class="nav-item" data-page="team-general">
+            <i class="ph ph-buildings"></i>
+            <span>General</span>
+          </a>
+          <a href="#" class="nav-item" data-page="team-litigation">
+            <i class="ph ph-gavel"></i>
+            <span>Litigation Dept</span>
+            <span class="nav-badge">2</span>
+          </a>
+          <a href="#" class="nav-item" data-page="team-corporate">
+            <i class="ph ph-building-office"></i>
+            <span>Corporate Dept</span>
+          </a>
+          <a href="#" class="nav-item" data-page="team-family">
+            <i class="ph ph-users-three"></i>
+            <span>Family Law Dept</span>
+          </a>
+        </div>
+
+        <!-- Bottom spacer -->
+        <div class="sidebar-spacer"></div>
+
+        <!-- Sidebar Footer -->
+        <div class="sidebar-footer">
+          <a href="#" class="nav-item" data-page="settings">
+            <i class="ph ph-gear"></i>
+            <span>Settings</span>
+          </a>
+        </div>
+      </aside>
+
+      <!-- Main Content Area -->
+      <main class="content" id="main-content">
+        <h1>Dashboard</h1>
+        <p class="welcome-text">
+          Good morning, Jane. Here's your overview for today.
+        </p>
+
+        <!-- Quick Stats -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-label">Active Cases</span>
+            <span class="stat-value">12</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Hearings This Week</span>
+            <span class="stat-value">3</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Pending Tasks</span>
+            <span class="stat-value">5</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Unread Messages</span>
+            <span class="stat-value">3</span>
+          </div>
+        </div>
+
+        <!-- Recent Cases -->
+        <div class="card">
+          <h2>Recent Cases</h2>
+          <div class="case-item">
+            <span class="case-id">CASE-0042</span>
+            <span class="case-client">Johnson Divorce Settlement</span>
+            <span class="case-status status-active">Active</span>
+            <span class="case-date">Updated Jun 25</span>
+          </div>
+          <div class="case-item">
+            <span class="case-id">CASE-0041</span>
+            <span class="case-client">Reyes Insurance Claim</span>
+            <span class="case-status status-pending">Pending</span>
+            <span class="case-date">Updated Jun 24</span>
+          </div>
+          <div class="case-item">
+            <span class="case-id">CASE-0040</span>
+            <span class="case-client">Thompson Property Dispute</span>
+            <span class="case-status status-active">Active</span>
+            <span class="case-date">Updated Jun 23</span>
+          </div>
+        </div>
+      </main>
+
+      <!-- Search Overlay -->
+      <div class="search-overlay" id="search-overlay">
+        <div class="search-panel">
+          <!-- Search Header -->
+          <div class="search-input-wrapper">
+            <i class="ph ph-magnifying-glass"></i>
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search cases, documents, clients..."
+              autocomplete="off"
+            />
+            <span class="search-shortcut">Esc to close</span>
+          </div>
+
+          <!-- Filter Chips -->
+          <div class="search-filters">
+            <button class="filter-chip active">All</button>
+            <button class="filter-chip">Cases</button>
+            <button class="filter-chip">Documents</button>
+            <button class="filter-chip">Clients</button>
+            <button class="filter-chip">Notes</button>
+            <button class="filter-chip">Messages</button>
+          </div>
+
+          <!-- Search Results -->
+          <div class="search-results" id="search-results">
+            <div class="search-section">
+              <span class="search-section-label">Recent</span>
+              <div class="search-result-item">
+                <i class="ph ph-briefcase"></i>
+                <div class="result-info">
+                  <span class="result-title">Johnson Divorce Settlement</span>
+                  <span class="result-meta">CASE-0042 • Updated Jun 25</span>
+                </div>
+              </div>
+              <div class="search-result-item">
+                <i class="ph ph-file-text"></i>
+                <div class="result-info">
+                  <span class="result-title">Motion to Dismiss — Draft v3</span>
+                  <span class="result-meta">Document • Modified yesterday</span>
+                </div>
+              </div>
+              <div class="search-result-item">
+                <i class="ph ph-calendar"></i>
+                <div class="result-info">
+                  <span class="result-title">Smith v. Jones Hearing</span>
+                  <span class="result-meta">Event • Jul 15, 9:00 AM</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="search-section">
+              <span class="search-section-label">Quick Actions</span>
+              <div class="search-result-item">
+                <i class="ph ph-plus-circle"></i>
+                <div class="result-info">
+                  <span class="result-title">Create New Case</span>
+                  <span class="result-meta">Action</span>
+                </div>
+              </div>
+              <div class="search-result-item">
+                <i class="ph ph-note-pencil"></i>
+                <div class="result-info">
+                  <span class="result-title">New Document Draft</span>
+                  <span class="result-meta">Action</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Empty State -->
+          <div class="search-empty" id="search-empty" style="display: none">
+            <i class="ph ph-magnifying-glass"></i>
+            <span>No results found</span>
+            <span class="empty-hint"
+              >Try a different search term or filter</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
