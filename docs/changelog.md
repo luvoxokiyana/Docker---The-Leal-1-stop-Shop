@@ -18,7 +18,9 @@
 - Navigation switching between all pages via JavaScript
 
 *Next Session TODO*
-[] Create the dashboard
+~~[] Create the dashboard
 [] add feature that when you via nav-links the content in the sidebar also changes(eg. When click on cases, cases page opens but the side bar will be a folder like list of all case)
+
+
 [] start working on CRUD features
 [] build login page(employees are reg'd by the hightest level person at the company, besides when you create the space for your company using is invite only)

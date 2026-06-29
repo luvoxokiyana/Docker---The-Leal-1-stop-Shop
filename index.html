@@ -10,176 +10,275 @@
   <body>
     <div class="app-container">
       <!-- Sidebar -->
-      <aside class="sidebar">
-        <!-- Profile Section -->
-        <div class="user-profile">
-          <div class="avatar">JD</div>
-          <div class="user-info">
+      <!-- Sidebar -->
+<aside class="sidebar">
+
+    <!-- Profile Section -->
+    <div class="user-profile">
+        <div class="avatar">JD</div>
+        <div class="user-info">
             <span class="user-name">Jane Doe</span>
             <span class="user-role">Senior Partner</span>
-          </div>
         </div>
+    </div>
 
-        <!-- Main Navigation -->
-        <nav class="sb-links">
-          <a href="#" class="nav-item active" data-page="dashboard">
+    <!-- Quick Links -->
+    <nav class="sb-links">
+        <a href="#" class="nav-item active" data-page="dashboard">
             <i class="ph ph-house"></i>
             <span>Home</span>
-          </a>
-          <a href="#" class="nav-item" data-page="cases">
+        </a>
+        <a href="#" class="nav-item" data-page="cases">
             <i class="ph ph-briefcase"></i>
             <span>Cases</span>
-            <span class="nav-badge">12</span>
-          </a>
-          <a href="#" class="nav-item" data-page="documents">
+        </a>
+        <a href="#" class="nav-item" data-page="documents">
             <i class="ph ph-files"></i>
             <span>Documents</span>
-          </a>
-          <div class="sidebar-search" id="search-trigger">
+        </a>
+        <div class="sidebar-search" id="search-trigger">
             <i class="ph ph-magnifying-glass"></i>
-          </div>
-        </nav>
+        </div>
+    </nav>
 
-        <!-- Divider -->
-        <div class="sidebar-spacer"></div>
+    <div class="sidebar-divider"></div>
 
-        <!-- Upcoming Section (Calendar access at bottom) -->
-        <div class="sidebar-section">
-          <span class="section-label">Upcoming</span>
-          <div class="upcoming-item">
+    <!-- Dynamic Context Section — changes based on page -->
+    <div class="sidebar-section" id="sidebar-context">
+        <!-- Default: Upcoming -->
+        <span class="section-label">Upcoming</span>
+        <div class="upcoming-item">
             <div class="upcoming-date">Jul 15</div>
             <div class="upcoming-details">
-              <span class="upcoming-title">Smith v. Jones</span>
-              <span class="upcoming-time">9:00 AM • Court Hearing</span>
+                <span class="upcoming-title">Smith v. Jones</span>
+                <span class="upcoming-time">9:00 AM • Court Hearing</span>
             </div>
-          </div>
-          <div class="upcoming-item">
+        </div>
+        <div class="upcoming-item">
             <div class="upcoming-date">Jul 16</div>
             <div class="upcoming-details">
-              <span class="upcoming-title">Client Meeting</span>
-              <span class="upcoming-time">2:00 PM • Office</span>
+                <span class="upcoming-title">Client Meeting</span>
+                <span class="upcoming-time">2:00 PM • Office</span>
             </div>
-          </div>
-          <a href="#" class="nav-item" data-page="calendar">
+        </div>
+        <a href="#" class="nav-item" data-page="calendar">
             <i class="ph ph-calendar"></i>
             <span>Full Calendar</span>
-          </a>
-        </div>
+        </a>
+    </div>
 
-        <div class="sidebar-divider"></div>
+    <div class="sidebar-divider"></div>
 
-        <!-- Private Section (unchanged) -->
-        <div class="sidebar-section">
-          <span class="section-label">Private</span>
-          <a href="#" class="nav-item" data-page="drafts">
+    <!-- Private Section -->
+    <div class="sidebar-section">
+        <span class="section-label">Private</span>
+        <a href="#" class="nav-item" data-page="drafts">
             <i class="ph ph-note-pencil"></i>
             <span>My Drafts</span>
-          </a>
-          <a href="#" class="nav-item" data-page="templates">
+        </a>
+        <a href="#" class="nav-item" data-page="templates">
             <i class="ph ph-file-text"></i>
             <span>Templates</span>
-          </a>
-          <a href="#" class="nav-item" data-page="my-notes">
+        </a>
+        <a href="#" class="nav-item" data-page="my-notes">
             <i class="ph ph-notepad"></i>
             <span>My Notes</span>
-          </a>
-          <a href="#" class="nav-item" data-page="quick-capture">
+        </a>
+        <a href="#" class="nav-item" data-page="quick-capture">
             <i class="ph ph-lightning"></i>
             <span>Quick Capture</span>
-          </a>
-        </div>
+        </a>
+    </div>
 
-        <div class="sidebar-divider"></div>
+    <div class="sidebar-divider"></div>
 
-        <!-- Teamspaces Section (Messages moved to top) -->
-        <div class="sidebar-section">
-          <span class="section-label">Teamspaces</span>
-          <a href="#" class="nav-item" data-page="messages">
+    <!-- Teamspaces Section -->
+    <div class="sidebar-section">
+        <span class="section-label">Teamspaces</span>
+        <a href="#" class="nav-item" data-page="messages">
             <i class="ph ph-chat-circle"></i>
             <span>All Messages</span>
             <span class="nav-badge">3</span>
-          </a>
-          <a href="#" class="nav-item" data-page="team-general">
+        </a>
+        <a href="#" class="nav-item" data-page="team-general">
             <i class="ph ph-buildings"></i>
             <span>General</span>
-          </a>
-          <a href="#" class="nav-item" data-page="team-litigation">
+        </a>
+        <a href="#" class="nav-item" data-page="team-litigation">
             <i class="ph ph-gavel"></i>
             <span>Litigation Dept</span>
             <span class="nav-badge">2</span>
-          </a>
-          <a href="#" class="nav-item" data-page="team-corporate">
+        </a>
+        <a href="#" class="nav-item" data-page="team-corporate">
             <i class="ph ph-building-office"></i>
             <span>Corporate Dept</span>
-          </a>
-          <a href="#" class="nav-item" data-page="team-family">
+        </a>
+        <a href="#" class="nav-item" data-page="team-family">
             <i class="ph ph-users-three"></i>
             <span>Family Law Dept</span>
-          </a>
-        </div>
+        </a>
+    </div>
 
-        <!-- Bottom spacer -->
-        <div class="sidebar-spacer"></div>
+    <!-- Bottom spacer -->
+    <div class="sidebar-spacer"></div>
 
-        <!-- Sidebar Footer -->
-        <div class="sidebar-footer">
-          <a href="#" class="nav-item" data-page="settings">
+    <!-- Sidebar Footer -->
+    <div class="sidebar-footer">
+        <a href="#" class="nav-item" data-page="settings">
             <i class="ph ph-gear"></i>
             <span>Settings</span>
-          </a>
-        </div>
-      </aside>
+        </a>
+    </div>
+
+</aside>
 
       <!-- Main Content Area -->
       <main class="content" id="main-content">
-        <h1>Dashboard</h1>
-        <p class="welcome-text">
-          Good morning, Jane. Here's your overview for today.
-        </p>
+    
+    <!-- Greeting + Date -->
+    <div class="dashboard-header">
+        <div>
+            <h1>Good morning, Jane.</h1>
+            <p class="welcome-text">Monday, June 29, 2026</p>
+        </div>
+    </div>
 
-        <!-- Quick Stats -->
-        <div class="stats-grid">
-          <div class="stat-card">
-            <span class="stat-label">Active Cases</span>
-            <span class="stat-value">12</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-label">Hearings This Week</span>
-            <span class="stat-value">3</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-label">Pending Tasks</span>
-            <span class="stat-value">5</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-label">Unread Messages</span>
-            <span class="stat-value">3</span>
-          </div>
+    <!-- Dashboard Grid -->
+    <div class="dashboard-grid">
+        
+        <!-- Widget: Overdue Alerts -->
+        <div class="widget widget-alerts" data-widget="alerts">
+            <div class="widget-header">
+                <h3><i class="ph ph-warning-circle"></i> Overdue</h3>
+                <span class="widget-count urgent">2</span>
+            </div>
+            <div class="widget-body">
+                <div class="alert-item">
+                    <span class="alert-case">Smith Response to Motion</span>
+                    <span class="alert-due">Due Jun 25</span>
+                </div>
+                <div class="alert-item">
+                    <span class="alert-case">Reyes Filing Deadline</span>
+                    <span class="alert-due">Due Jun 24</span>
+                </div>
+            </div>
         </div>
 
-        <!-- Recent Cases -->
-        <div class="card">
-          <h2>Recent Cases</h2>
-          <div class="case-item">
-            <span class="case-id">CASE-0042</span>
-            <span class="case-client">Johnson Divorce Settlement</span>
-            <span class="case-status status-active">Active</span>
-            <span class="case-date">Updated Jun 25</span>
-          </div>
-          <div class="case-item">
-            <span class="case-id">CASE-0041</span>
-            <span class="case-client">Reyes Insurance Claim</span>
-            <span class="case-status status-pending">Pending</span>
-            <span class="case-date">Updated Jun 24</span>
-          </div>
-          <div class="case-item">
-            <span class="case-id">CASE-0040</span>
-            <span class="case-client">Thompson Property Dispute</span>
-            <span class="case-status status-active">Active</span>
-            <span class="case-date">Updated Jun 23</span>
-          </div>
+        <!-- Widget: Tasks -->
+        <div class="widget widget-tasks" data-widget="tasks">
+            <div class="widget-header">
+                <h3><i class="ph ph-check-square"></i> My Tasks</h3>
+                <span class="widget-count">5</span>
+            </div>
+            <div class="widget-body">
+                <label class="task-item">
+                    <input type="checkbox" />
+                    <span>File motion — Smith case</span>
+                </label>
+                <label class="task-item">
+                    <input type="checkbox" />
+                    <span>Review discovery — Reyes case</span>
+                </label>
+                <label class="task-item">
+                    <input type="checkbox" checked />
+                    <span>Call Johnson client</span>
+                </label>
+                <label class="task-item">
+                    <input type="checkbox" />
+                    <span>Prep hearing notes</span>
+                </label>
+                <label class="task-item">
+                    <input type="checkbox" />
+                    <span>Submit billable hours</span>
+                </label>
+            </div>
         </div>
-      </main>
+
+        <!-- Widget: Today's Schedule -->
+        <div class="widget widget-schedule widget-wide" data-widget="schedule">
+            <div class="widget-header">
+                <h3><i class="ph ph-calendar"></i> Today's Schedule</h3>
+                <span class="widget-date">Jun 29</span>
+            </div>
+            <div class="widget-body">
+                <div class="schedule-item">
+                    <div class="schedule-time">9:00 AM</div>
+                    <div class="schedule-dot"></div>
+                    <div class="schedule-info">
+                        <span class="schedule-title">Smith v. Jones — Court Hearing</span>
+                        <span class="schedule-meta">Dept 4, County Courthouse</span>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">11:30 AM</div>
+                    <div class="schedule-dot"></div>
+                    <div class="schedule-info">
+                        <span class="schedule-title">Client Call — M. Thompson</span>
+                        <span class="schedule-meta">Phone • 15 min</span>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">2:00 PM</div>
+                    <div class="schedule-dot"></div>
+                    <div class="schedule-info">
+                        <span class="schedule-title">Deposition Prep — Reyes Case</span>
+                        <span class="schedule-meta">Conference Room B</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Widget: Recent Cases -->
+        <div class="widget widget-cases" data-widget="recent-cases">
+            <div class="widget-header">
+                <h3><i class="ph ph-briefcase"></i> Recent Cases</h3>
+            </div>
+            <div class="widget-body">
+                <div class="case-row">
+                    <span class="case-id">CASE-0042</span>
+                    <span class="case-name">Johnson Divorce</span>
+                    <span class="case-status status-active">Active</span>
+                </div>
+                <div class="case-row">
+                    <span class="case-id">CASE-0041</span>
+                    <span class="case-name">Reyes Insurance</span>
+                    <span class="case-status status-pending">Pending</span>
+                </div>
+                <div class="case-row">
+                    <span class="case-id">CASE-0040</span>
+                    <span class="case-name">Thompson Property</span>
+                    <span class="case-status status-active">Active</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Widget: Quick Actions -->
+        <div class="widget widget-actions" data-widget="quick-actions">
+            <div class="widget-header">
+                <h3><i class="ph ph-lightning"></i> Quick Actions</h3>
+            </div>
+            <div class="widget-body">
+                <button class="action-btn">
+                    <i class="ph ph-plus-circle"></i>
+                    New Case
+                </button>
+                <button class="action-btn">
+                    <i class="ph ph-note-pencil"></i>
+                    New Document
+                </button>
+                <button class="action-btn">
+                    <i class="ph ph-check-square"></i>
+                    New Task
+                </button>
+                <button class="action-btn">
+                    <i class="ph ph-calendar-plus"></i>
+                    Schedule Meeting
+                </button>
+            </div>
+        </div>
+
+    </div>
+</main>
 
       <!-- Search Overlay -->
       <div class="search-overlay" id="search-overlay">
